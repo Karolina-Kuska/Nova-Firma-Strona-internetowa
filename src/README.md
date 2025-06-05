@@ -69,5 +69,5 @@ Wspólny arkusz stylów zawierający:
 - Otwórz plik index.html w swojej przeglądarce, np. przez dwuklik lub przeciągnięcie na Chrome/Firefox.
 
 ## 👤 Autor
-- Projekt i stylizacja: Jordan Krakowiak
-- Email: [jordan.krakowiak@o2.pl]
+- Projekt i stylizacja: ....
+- Email: [...]
