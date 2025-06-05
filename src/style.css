@@ -1,0 +1,179 @@
+/* ==== Reset i ogólne ==== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* ==== Nagłówek i menu ==== */
+header {
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 15px 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+}
+
+.header-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.header-text h1 {
+  margin: 0;
+  font-size: 28px;
+  color: #444;
+  letter-spacing: 1.2px;
+}
+
+nav {
+  margin-left: auto;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #555;
+  font-weight: 600;
+  font-size: 16px;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #d6336c;
+}
+
+nav a::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 2px;
+  background: #d6336c;
+  transition: width 0.3s;
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+}
+
+nav a:hover::after {
+  width: 100%;
+}
+
+/* ==== Karty i layout główny ==== */
+main {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.card {
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(214,51,108,0.15);
+  margin-bottom: 30px;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(214,51,108,0.25);
+}
+
+.section-title {
+  color: #d6336c;
+  font-size: 26px;
+  margin-bottom: 15px;
+  border-bottom: 3px solid #d6336c;
+  padding-bottom: 8px;
+  letter-spacing: 1.1px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  background-color: #fff;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.1);
+  color: #777;
+  margin-top: 50px;
+}
+
+/* ==== Formularz kontaktowy ==== */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.form-column,
+.info-column {
+  flex: 1 1 350px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 15px;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+button[type="submit"] {
+  background-color: #d6336c;
+  color: white;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button[type="submit"]:hover {
+  background-color: #b42b59;
+}
+
+/* ==== Responsywność ==== */
+@media (max-width: 600px) {
+  nav {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  nav a {
+    margin-left: 0;
+  }
+
+  section,
+  .card {
+    padding: 20px;
+  }
+}

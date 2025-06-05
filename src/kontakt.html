@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Kontakt - NovaPro</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <!-- <div class="header-container"> -->
+      <img src="img/logo.png" alt="Logo firmy" class="logo">
+      <div class="header-text">
+        <h1>NovaPro</h1>
+        <nav>
+          <a href="index.html">Strona Główna</a>
+          <a href="o-nas.html">O nas</a>
+          <a href="kontakt.html">Kontakt</a>
+        </nav>
+      </div>
+    <!-- </div> -->
+  </header>
+
+  <main>
+    <div class="contact-container">
+      <div class="form-column card">
+        <h2>Formularz kontaktowy</h2>
+        <form id="kontakt-form">
+          <label for="name">Imię:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="message">Wiadomość:</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+          <button type="submit">Wyślij</button>
+        </form>
+      </div>
+
+      <div class="info-column card">
+        <h2>Dane kontaktowe</h2>
+        <p><strong>Adres:</strong> ul. Przykładowa 12, 00-001 Warszawa</p>
+        <p><strong>Telefon:</strong> +48 123 456 789</p>
+        <p><strong>Email:</strong> kontakt@novapro.pl</p>
+
+        <h3>Godziny otwarcia</h3>
+        <p>Poniedziałek - Piątek: 9:00 - 17:00</p>
+        <p>Sobota: 10:00 - 14:00</p>
+        <p>Niedziela: nieczynne</p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 NovaPro</p>
+  </footer>
+</body>
+</html>
